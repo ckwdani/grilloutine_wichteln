@@ -234,6 +234,15 @@ if ($state === 'reveal' && empty($pairings) && file_exists($pairingsPath)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="Rich BBQ.png">
+    <meta property="og:title" content="Grilloutine Wichteln">
+    <meta property="og:image" content="Rich BBQ.png">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Grilloutine Wichteln - Die lustige Wichtelaktion für alle Grillfreunde!">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Grilloutine Wichteln">
+    <meta name="twitter:image" content="Rich BBQ.png">
+    <meta name="twitter:description" content="Grilloutine Wichteln - Die lustige Wichtelaktion für alle Grillfreunde!">
     <title>Grilloutine Wichteln</title>
     <style>
         :root {
@@ -257,7 +266,7 @@ if ($state === 'reveal' && empty($pairings) && file_exists($pairingsPath)) {
 
         .container {
             width: min(900px, 92vw);
-            padding: 2.5rem;
+            padding: 1.5rem;
             background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
             border: 1px solid rgba(212, 175, 55, 0.4);
             border-radius: 28px;
@@ -296,9 +305,10 @@ if ($state === 'reveal' && empty($pairings) && file_exists($pairingsPath)) {
         }
 
         .logo {
-            width: 500px;
-            height: 500px;
+            width: min(500px, 80vw);
+            height: min(500px, 80vw);
             border-radius: 50%;
+ 
             margin: 0 auto 1rem auto;
             border: 2px solid rgba(212,175,55,0.65);
             display: grid;
@@ -423,7 +433,7 @@ if ($state === 'reveal' && empty($pairings) && file_exists($pairingsPath)) {
 <body>
 <div class="container">
     <div class="logo"><span>
-        <img src="Rich BBQ.png" alt="Rich BBQ Logo" style="max-width: 100%; height: auto;">
+        <img src="Rich BBQ.png" alt="Rich BBQ Logo" style="max-width: 100%; max-height: min(400px, 75vw);">
     </span></div>
 
     <h1>Grilloutine Wichteln</h1>
