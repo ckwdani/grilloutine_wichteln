@@ -233,7 +233,8 @@ if ($state === 'reveal' && empty($pairings) && file_exists($pairingsPath)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geheimes Wichteln</title>
+    <link rel="icon" type="image/png" href="Rich BBQ.png">
+    <title>Grilloutine Wichteln</title>
     <style>
         :root {
             --bg: #5a0f2d;
@@ -246,7 +247,7 @@ if ($state === 'reveal' && empty($pairings) && file_exists($pairingsPath)) {
         body {
             margin: 0;
             font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
-            background: radial-gradient(circle at top, #7b193f 0%, var(--bg) 45%, #2f0717 100%);
+            background: radial-gradient(circle at top, #701224 0%, var(--bg) 45%, #901224 100%);
             color: var(--gold);
             min-height: 100vh;
             display: flex;
@@ -295,8 +296,8 @@ if ($state === 'reveal' && empty($pairings) && file_exists($pairingsPath)) {
         }
 
         .logo {
-            width: 110px;
-            height: 110px;
+            width: 500px;
+            height: 500px;
             border-radius: 50%;
             margin: 0 auto 1rem auto;
             border: 2px solid rgba(212,175,55,0.65);
@@ -421,8 +422,11 @@ if ($state === 'reveal' && empty($pairings) && file_exists($pairingsPath)) {
 </head>
 <body>
 <div class="container">
-    <div class="logo"><span>W</span></div>
-    <h1>Geheimes Wichteln</h1>
+    <div class="logo"><span>
+        <img src="Rich BBQ.png" alt="Rich BBQ Logo" style="max-width: 100%; height: auto;">
+    </span></div>
+
+    <h1>Grilloutine Wichteln</h1>
 
     <div class="panel status">
         <div>
@@ -476,7 +480,7 @@ if ($state === 'reveal' && empty($pairings) && file_exists($pairingsPath)) {
         </div>
     <?php endif; ?>
 
-    <div class="footer">Bordeaux &amp; Gold Edition · Viel Spaß beim Wichteln!</div>
+    <div class="footer"> Grillchill Edition! Viel Spaß beim wichteln!</div>
 </div>
 </body>
 </html>
